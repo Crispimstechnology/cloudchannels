@@ -1,0 +1,247 @@
+
+body {
+    background-color: #011330
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* *inicia todos os elementos com margin e o padding 0 */
+
+.container-principal {
+	font-family: 'verdana';
+	color: #777
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #1467e4;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo img{
+    width: 175px; /* ajuste o tamanho conforme necessário */
+  height: auto; /* ajuste o tamanho conforme necessário */
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #1E90FF;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+    nav .menu-btn i{
+        display: block}
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #4682B4;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #1E90FF;
+    }   
+}
+
+
+/* Definindo as propriedades da imagem principal */
+
+#banner {
+	width: 100%;
+}
+
+#banner img {
+	width: 100%;
+	/*margin-bottom: 0;*/
+}
+
+.modal img {
+  width: 50%;
+	position: relative;
+	margin-left: 25%;
+}
+
+body {
+    font-family: sans-serif;
+  }
+  .modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .modal[open] {
+    display: flex;
+  }
+  .model-inner {
+    background-color: white;
+    border-radius: 0.5em;
+    max-width: 600px;
+    padding: 2em;
+    margin: auto;
+  }
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  }
+  #modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: black;
+    opacity: 0.5;  
+  }
+
+
+footer {
+	background-color: #1467e4;
+	width: 100%;
+	color: #ffffff;
+
+	float: left;
+	font-family:'verdana';
+	text-align: center;
+	padding: 50px;
+}
+
+footer .footer-text {
+	width: 30%;
+	margin: 1%;
+
+	float: left;
+	text-align: left;
+}
+
+footer .footer-text a {
+	color: #f2f2f2;
+}
+
+
+
+/* Definindo a cor das parinas do site  */
+.color-page {
+	background-color: #fff
+}
+
+
+/* Definindo as config do conteiner config-home*/
+
+#c-home{width: 75%; 
+    position: relative; 
+        float: left;
+}
+#c-home .config-home {
+width: 40%;
+border: 1px solid #1E90FF;
+margin: 1.5%;
+padding: 1%;
+float: left ;
+margin-top: 30px;
+background-color: #fff;
+}
+#c-home .config-home img{
+width: 60%;
+margin-left: 20%;
+margin-bottom: 20%;
+} 
+
+#c-home .config-home p{
+width: 90%;
+margin-left: 5%;
+font-size: 1.2em;
+margin-bottom: 20px;
+text-align: center;
+}
+#c-home .config-home p a{color: aqua;}
+
+
+#bannercontact {
+	width: 50%;
+}
+
+#bannercontact img {
+	width: 50%;
+	/*margin-bottom: 0;*/
+}
+div.box {
+	padding: 10px;
+	width: 220px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/*scroll para o topo*/
+
+#topo-nav{
+	text-decoration: none;
+	color: #00ffff;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+html{
+	scroll-behavior: smooth;
+}
